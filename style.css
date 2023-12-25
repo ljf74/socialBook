@@ -777,7 +777,7 @@ nav {
     flex-wrap: wrap;
   }
   .main-content {
-    flex-wrap: 100%;
+    flex-basis: 100%;
   }
   .story img {
     width: 30px;
