@@ -825,7 +825,7 @@ nav {
   .profile-info {
     flex-wrap: wrap;
   }
-  .info-col, post-col {
+  .info-col, .post-col {
     flex-basis: 100%;
   }
 }
