@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Responsive Gaming Website</title>
+  <!-- Bpxicons CSS -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Remixicons CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- scrollreveal effect -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <a href='#' class="logo">COC.NET</a>
+    <ul class="nav-links">
+       <li><a href="#">Home</a></li>
+       <li><a href="#">Clans</a></li>
+       <li><a href="#">Players</a></li>
+       <li><a href="#">Ranking</a></li>
+       <li><a href="#">Leagues</a></li>
+    </ul>
+    <div class="bx bx-menu" id="menu-icon"></div>
+  </header>
+
+  <!-- Banner Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Pixlr Character</h1>
+      <h4>Hi There</h4>
+      <p>Hi cool, it is mine. I need writing some words to padding these blanks.</p>
+      <a href="#">Compare</a>
+      <a href="#" class="playBtn"><i class="ri-play-fill"></i>Gameplay</a>
+    </div>
+    <div class="hero-img">
+      <img src="images/source(3).png">
+    </div>
+  </section>
+
+  <!-- Social Icons -->
+  <div class='icons'>
+    <a href="#"><i class="ri-instagram-line"></i></a>
+    <a href="#"><i class="ri-youtube-line"></i></a>
+    <a href="#"><i class="ri-dribbble-line"></i></a>
+  </div>
+
+  <!-- scroll down arrow -->
+  <div class="scroll-down">
+    <a href='#'><i class="ri-arrow-down-s-fill"></i></a>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+ <script>
+   /* Toggle menu script */
+   let menu = document.querySelector("#menu-icon");
+   let navlinks = document.querySelector(".nav-links");
+
+   menu.onclick = () => {
+     menu.classList.toggle("bx-x");
+     navlinks.classList.toggle("open");
+   }
+
+   /* scrollreveal effect */
+   const sr = ScrollReveal({
+     distance: '65px',
+     duration: 2600,
+     delay: 450,
+     reset: true
+   });
+
+   sr.reveal('.hero-text', {delay: 200, origin: 'top'});
+   sr.reveal('.hero-img', {delay: 450, origin: 'top'});
+ </script>
+</html>
